@@ -1,17 +1,15 @@
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
-// Footer date info
+// Set current year and last modified date in footer
 const yearSpan = document.getElementById("year");
 const lastModifiedSpan = document.getElementById("lastModified");
 
 yearSpan.textContent = new Date().getFullYear();
 lastModifiedSpan.textContent = document.lastModified;
 
-// Static weather values
-const temperature = 45; // °F
-const windSpeed = 5; // mph
+// Static weather values (replace later with API)
+const temperature = 45; // in °F
+const windSpeed = 5; // in mph
 
-// Wind chill formula (only for Fahrenheit)
+// Calculate wind chill using standard formula
 function calculateWindChill(tempF, speedMph) {
   return (
     35.74 +
@@ -21,13 +19,11 @@ function calculateWindChill(tempF, speedMph) {
   ).toFixed(1);
 }
 
-// Display wind chill
-const windChillPara = document.querySelector(".weather p:last-child");
+// Display wind chill if valid, else show N/A
+const windChillElement = document.querySelector(".weather p:last-child");
 if (temperature <= 50 && windSpeed > 3) {
-  windChillPara.textContent = `Wind Chill: ${calculateWindChill(
-    temperature,
-    windSpeed
-  )}°F`;
+  const windChill = calculateWindChill(temperature, windSpeed);
+  windChillElement.textContent = `Wind Chill: ${windChill}°F`;
 } else {
-  windChillPara.textContent = "Wind Chill: N/A";
+  windChillElement.textContent = "Wind Chill: N/A";
 }
