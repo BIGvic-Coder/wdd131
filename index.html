@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+      <h1>WDD 131 – Dynamic Web Fundamentals</h1>
       <nav>
         <a href="https://linkedin.com" target="_blank">LinkedIn</a>
         <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
@@ -27,22 +27,48 @@
       </nav>
     </header>
 
-    <main>
-      <h1>Talabi Victor</h1>
-
-      <section class="card">
+    <main class="container">
+      <!-- About Me Card -->
+      <section class="card about-me">
         <h2>About Me</h2>
-        <img src="images/fresh.jpg" alt="Talabi Victor" />
-        <p>
-          Hello! I'm Talabi Victor from Nigeria. I'm passionate about web
-          development and I enjoy learning and building projects that make a
-          difference. Let's build something amazing!
-        </p>
+        <div class="about-content">
+          <img src="images/fresh.jpg" alt="Talabi Victor portrait" />
+          <div class="about-text">
+            <p>
+              Hello! I'm Talabi Victor from Nigeria. I'm passionate about web
+              development and enjoy creating websites that make a real
+              difference. I love working with HTML, CSS, and JavaScript, and I'm
+              currently learning more about full-stack development.
+            </p>
+            <p>
+              I enjoy music, learning about the gospel, and exploring how
+              technology can bless lives. I live in Nigeria and I’m grateful to
+              be part of BYU-Idaho’s online learning.
+            </p>
+          </div>
+        </div>
+
+        <!-- Country Info -->
+        <h3 class="location-title">Nigeria</h3>
+        <hr />
+        <div class="country-info">
+          <img src="images/naija flag.jpg" alt="Official Flag of Nigeria" />
+          <div class="country-description">
+            <p>
+              Nigeria is a country in West Africa, known for its rich history,
+              cultural diversity, and vibrant traditions. It is the most
+              populous country in Africa and boasts over 500 ethnic groups.
+              Nigeria is famous for its Nollywood film industry, Afrobeats
+              music, delicious cuisine, and natural landmarks like the Zuma Rock
+              and Niger River. The capital is Abuja.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section class="card">
+      <!-- Resources Card -->
+      <section class="card resources">
         <h2>Web Dev Resources</h2>
-        <img src="images/naija flag.jpg" alt="Nigeria Flag" />
         <ul>
           <li>
             <a href="https://developer.mozilla.org/" target="_blank"
@@ -60,7 +86,7 @@
     </main>
 
     <footer>
-      <p>&copy; <span id="currentyear"></span> Talabi Victor, Nigeria</p>
+      <p>&copy; <span id="currentyear"></span> Talabi Victor | Nigeria.</p>
       <p id="lastModified"></p>
     </footer>
   </body>
