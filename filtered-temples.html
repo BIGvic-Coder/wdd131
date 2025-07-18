@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtered Temples</title>
+    <link rel="stylesheet" href="/styles/filtered-temple.css" />
+    <link
+      rel="stylesheet"
+      href="/styles/filtered-temples-large.css"
+      media="(min-width: 768px)"
+    />
+    <script src="./scripts/filtered-temple.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Temple Album</h1>
+      <button id="menu">☰</button>
+      <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">Old</a>
+        <a href="#">New</a>
+        <a href="#">Large</a>
+        <a href="#">Small</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Temples</h2>
+      <div class="temple-grid"></div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Talabi Victor | Nigeria</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

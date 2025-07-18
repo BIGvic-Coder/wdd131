@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+  .temple-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0;
+  }
+
+  #menu {
+    display: none;
+  }
+}
