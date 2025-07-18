@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Nigeria</title>
+    <link rel="stylesheet" href="./styles/place.css" />
+    <script src="./scripts/place.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Explore Nigeria</h1>
+    </header>
+
+    <main>
+      <section class="hero">
+        <picture>
+          <source srcset="./images/lekki.jpg" media="(max-width: 600px)" />
+          <source srcset="./images/lekki.jpg" media="(max-width: 1200px)" />
+          <img src="./images/lekki.jpg" alt="Hero view of Nigeria" />
+        </picture>
+      </section>
+
+      <section class="weather">
+        <h2>Weather <span class="weather-icon"></span></h2>
+        <p>Temperature: 45°F</p>
+        <p>Wind Speed: 5 mph</p>
+        <p>Wind Chill: N/A</p>
+      </section>
+
+      <section class="info">
+        <h2>About Nigeria</h2>
+        <p>
+          Nigeria, often called the "Giant of Africa," is a vibrant and diverse
+          country located in West Africa. It is home to over 200 million people
+          and boasts more than 250 ethnic groups, with rich cultural traditions,
+          music, and languages. Nigeria is known for its dynamic cities like
+          Lagos and Abuja, beautiful landscapes such as the Zuma Rock and Obudu
+          Cattle Ranch, and natural wonders like the Niger River and Aso Rock.
+          Nigerian cuisine is bold and flavorful, featuring dishes like jollof
+          rice, pounded yam, egusi soup, and suya. The country is also a
+          powerhouse of creativity, especially in literature, fashion, and its
+          globally recognized film industry, Nollywood.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        © <span id="year"></span> | Last Modified:
+        <span id="lastModified"></span>
+      </p>
+    </footer>
+  </body>
+</html>
