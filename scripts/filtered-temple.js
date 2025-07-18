@@ -93,7 +93,7 @@ const temples = [
     location: "Salt Lake City, Utah, United States",
     dedicated: "1893, April, 6",
     area: 253015,
-    imageUrl: "./images/salt-lake-temple.jpg",
+    imageUrl: "./images/salt lake temple.jpg",
   },
 ];
 
