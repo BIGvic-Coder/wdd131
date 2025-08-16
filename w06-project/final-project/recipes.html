@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Recipe collection with dynamic JavaScript rendering."
+    />
+    <title>Final Project | Recipes</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Recipes</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="recipes.html" class="active">Recipes</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+      <button id="modeToggle">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+      <section>
+        <h2>Our Favorite Recipes</h2>
+
+        <!-- Filter dropdown -->
+        <label for="difficultyFilter">Filter by Difficulty:</label>
+        <select id="difficultyFilter">
+          <option value="all">All</option>
+          <option value="Easy">Easy</option>
+          <option value="Medium">Medium</option>
+          <option value="Hard">Hard</option>
+        </select>
+
+        <div id="recipesList" class="card-grid">
+          <!-- Recipes will be injected here by JS -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Talabi Victor | Nigeria</p>
+      <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

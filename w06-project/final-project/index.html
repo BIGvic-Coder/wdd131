@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Final Project Homepage - Showcasing recipes, culture, and more."
+    />
+    <title>Final Project | Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Final Project</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+      <button id="modeToggle">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Discover Amazing Content</h2>
+        <p>
+          This website demonstrates HTML, CSS, and JavaScript skills with
+          responsive design and dynamic features.
+        </p>
+        <img src="images/ses.jpg" alt="Hero image" loading="lazy" />
+      </section>
+
+      <section>
+        <h2>Highlights</h2>
+        <div class="card-grid">
+          <article class="card">
+            <img src="images/jollof.jpg" alt="Sample 1" loading="lazy" />
+            <h3>Jollof Rice</h3>
+            <p>A rich and spicy West African rice dish, loved worldwide.</p>
+          </article>
+
+          <article class="card">
+            <img src="images/spagetti.jpg" alt="Sample 2" loading="lazy" />
+            <h3>Spaghetti Carbonara</h3>
+            <p>A creamy Italian classic made with eggs, cheese, and pasta.</p>
+          </article>
+
+          <article class="card">
+            <img src="images/chicken.jpg" alt="Sample 3" loading="lazy" />
+            <h3>Chicken Soup</h3>
+            <p>A hearty and comforting meal, enjoyed across cultures.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Talabi Victor | Nigeria</p>
+      <p id="lastModified"></p>
+      <p><a href="references.html">References</a></p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

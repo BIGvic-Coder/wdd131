@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore Nigeria</title>
-    <link rel="stylesheet" href="./styles/place.css" />
-    <script src="./scripts/place.js" defer></script>
+    <link rel="stylesheet" href="css/place.css" />
+    <script src="js/place.js" defer></script>
   </head>
   <body>
     <header>
@@ -15,9 +15,13 @@
     <main>
       <section class="hero">
         <picture>
-          <source srcset="./images/lekki.jpg" media="(max-width: 600px)" />
-          <source srcset="./images/lekki.jpg" media="(max-width: 1200px)" />
-          <img src="./images/lekki.jpg" alt="Hero view of Nigeria" />
+          <source srcset="images/lekki-small.webp" media="(max-width: 600px)" />
+          <source srcset="images/lekki-large.webp" media="(min-width: 601px)" />
+          <img
+            src="images/lekki-large.webp"
+            alt="Scenic view of Lekki, Nigeria"
+            loading="lazy"
+          />
         </picture>
       </section>
 
@@ -30,10 +34,6 @@
           music, and languages. Nigeria is known for its dynamic cities like
           Lagos and Abuja, beautiful landscapes such as the Zuma Rock and Obudu
           Cattle Ranch, and natural wonders like the Niger River and Aso Rock.
-          Nigerian cuisine is bold and flavorful, featuring dishes like jollof
-          rice, pounded yam, egusi soup, and suya. The country is also a
-          powerhouse of creativity, especially in literature, fashion, and its
-          globally recognized film industry, Nollywood.
         </p>
       </section>
 
@@ -49,7 +49,12 @@
       </section>
 
       <section class="weather">
-        <h2>Weather <span class="weather-icon">🌤️</span></h2>
+        <h2>
+          Weather
+          <span class="mobile-icon"
+            ><img src="images/weather-icon.svg" alt="weather icon"
+          /></span>
+        </h2>
         <p>Temperature: <span id="temperature">45</span>°F</p>
         <p>Wind Speed: <span id="windSpeed">5</span> mph</p>
         <p>Wind Chill: <span id="windChill">Calculating...</span></p>
@@ -58,7 +63,7 @@
 
     <footer>
       <p>
-        © <span id="year"></span> | Last Modified:
+        &copy; <span id="year"></span> | Last Modified:
         <span id="lastModified"></span>
       </p>
     </footer>

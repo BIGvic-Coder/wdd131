@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact page with form to reach out." />
+    <title>Final Project | Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Me</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+      <button id="modeToggle">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+      <section>
+        <h2>Get in Touch</h2>
+        <p>
+          If you have any questions, feedback, or comments, please fill out the
+          form below.
+        </p>
+
+        <form id="contactForm">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="topic">Topic:</label>
+          <select id="topic" name="topic" required>
+            <option value="">--Please choose an option--</option>
+            <option value="feedback">Feedback</option>
+            <option value="question">Question</option>
+            <option value="support">Support</option>
+          </select>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <p id="formResponse" class="hidden"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Talabi Victor | Nigeria</p>
+      <p id="lastModified"></p>
+      <p><a href="references.html">References</a></p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
